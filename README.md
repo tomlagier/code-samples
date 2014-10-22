@@ -6,41 +6,35 @@ A collection of code snippets highlighting my skills and experience. Unless othe
 Contents:
 
 * PHP
-* * Laravel projects
-* * * controllers
-* * * * LoginController.php
-* * * * SocialController.php
-* * * routes.php
-* * * views
-* * * * home.blade.php
-* * * * chunks
-* * * * * about.blade.php
-* * * * * image.blade.php
-* * * * * nav.blade.php
-* * * * * slider.blade.php
-* * * * * social.blade.php
-* * * * * start.blade.php
-* * * * * stats.blade.php
-* * WordPress projects
-* * * The_Wharf
-* * * * [Full theme here]
-* * Standalone
-* * * EmailHelper.php
-* * * FileHelper.php
-* * * ImageHelper.php
+    * Laravel projects
+        * controllers
+            * LoginController.php
+            * SocialController.php
+        * routes.php
+        * views
+           * home.blade.php
+            * chunks
+                * [View partials]
+     * WordPress projects
+        * The_Wharf
+            * [Full theme]
+    * Standalone
+        * EmailHelper.php
+        * FileHelper.php
+        * ImageHelper.php
 * Javascript
-* * Client-side
-* * * custom.js
-* * * events-list.js
-* * * social.js
-* * NodeJS
-* * * app.js
-* * * chunker.js
-* * * sentiment.js
+    * Client-side
+        * custom.js
+        * events-list.js
+        * social.js
+    * NodeJS
+        * app.js
+        * chunker.js
+        * sentiment.js
 * Sass
-* * Project_1
-* * * [SASS project here]
-* * Project_2
-* * * [SASS project here]
-* * Project_3
-* * * [SASS project here]
+    * Project_1
+        * [SASS project here]
+    * Project_2
+        * [SASS project here]
+    * Project_3
+        * [SASS project here]
