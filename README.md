@@ -33,8 +33,8 @@ Contents:
         * sentiment.js
 * Sass
     * Project_1
-        * [SASS project here]
+        * [SASS project]
     * Project_2
-        * [SASS project here]
+        * [SASS project]
     * Project_3
-        * [SASS project here]
+        * [SASS project]
