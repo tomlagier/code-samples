@@ -1,0 +1,230 @@
+/* Universal Grid Layout Styles */
+@import "../_variables";
+
+.clear {
+    width:1px;
+    height:0;
+    line-height:0;
+    background:transparent;
+    border:none;
+    margin:0;
+    padding:0;
+    clear:both;
+}
+
+.profiles .grid-container .grid-item, .grid-entries .grid-container .grid-item {
+    height: 300px;
+    perspective: 1000;
+    transition: all .7s;
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+}
+
+.grid-entries
+{
+    margin-top: 30px;
+    position:relative;
+}
+
+.grid-item-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-pic img {
+	width:100%;
+	height:auto;
+	border:1px solid $sg_blue;
+}
+
+.grid-item {
+    cursor: pointer;
+    .hidden {
+    	opacity: 0;
+    }
+    .front {
+    	border:1px solid $grey_2;
+	    color:$white_1;
+	    display:block;
+	    height:auto;
+	    .inner {
+	    	width: 100%;
+		    height: 100%;
+		    background-color:$sg_blue;
+		    background-size: cover;
+		    background-position: center center;
+		    background-repeat: no-repeat;
+	    	img.profile-pic {
+		    	width:100%;
+			    height:100%;
+			    display:block;
+	    	}
+	    }
+    }
+    .back {
+    	border:1px solid $sg_blue;
+    	.inner {
+    		background:$white;
+    		width: 100%;
+    		height: 100%;
+    		p {
+    			font-family:$cardo;
+			    font-size:1em;
+			    color:$grey_2;
+			    text-align:center;
+			    margin:0.5em;
+			    padding:0;
+			    strong {
+			    	font-family:$pathway;
+				    width:100%;
+				    position:relative;
+				    display:block;
+				    border-bottom:1px solid $sg_blue;
+				    margin:0 0 0.5em;
+			    }
+			    a.crystal {
+			    	background:transparent;
+				    color:transparent;
+				    text-decoration:none;
+				    border:none;
+			    }
+    		}
+    		.click-me {
+    			width:50%;
+			    height:auto;
+			    display:block;
+			    background:transparent;
+			    position:absolute;
+			    z-index:20002;
+			    left:25%;
+			    bottom:5%;
+			    text-align:center;
+			    cursor:pointer;
+			    p {
+			    	font-family:$pathway;
+				    font-size:1.75em;
+				    line-height:1;
+				    font-weight:bold;
+				    color:$sg_blue;
+				    margin:0 0.5em 0.5em;
+				    span {
+				    	font-family:$pathway;
+					    font-size:0.5em;
+					    font-weight:normal;
+					    text-transform:uppercase;
+					    color:$sg_blue;
+					    margin:0;
+					    text-align:center;
+				    }
+			    }
+    		}
+    	}
+    	h2 {
+    		font-family:$pathway;
+		    font-size:1.75em;
+		    color:$grey_2;
+		    margin:0.5em;
+		    padding:0 0 .5em 0;
+		    border-bottom: solid 1px $sg_blue;
+    	}
+    	h3 {
+    		position: absolute;
+		    width: 100%;
+		    bottom: 1em;
+    	}
+    	h5 {
+    		margin: 1em 0 .5em;
+    	}
+    }
+}
+
+#modal {
+	.content {
+		padding:0;
+	}
+	#caseName {
+		color:$white;
+		width:100%;
+	}
+	.employee-title {
+		font-size:1.5em;
+	}
+	.info-section {
+		margin:0 0 .8 0;
+		div {
+			font-family:$cardo;
+			color:$dk_grey;
+		}
+		a.btn:hover {
+			background:$sg_blue;
+			color:$white;
+		}
+	}
+	.info-section:last-child {
+		margin:0;
+	}
+	.info-area {
+		margin: 2em 0 0 0;
+	    background: $lt_grey;
+	    padding: 1em;
+	    opacity: inherit;
+	}
+	a {
+		color:$grey_2;
+	}
+	a:hover {
+		text-decoration:none;
+		color:$sg_blue;
+	}
+	.socials {
+		font-family:$cardo;
+	    color:$grey_2;
+	    font-size:1.2em;
+	    strong {
+	    	font-family:$pathway;
+		    color:$sg_blue;
+		    font-size:2em;
+		    line-height:1.5;
+	    }
+	    span {
+	    	font-family:$pathway;
+		    color:$sg_blue;
+		    font-weight:bold;
+		    font-size:1.1em;
+	    }
+	    img.social {
+	    	border-radius:0.4em;
+    		margin:0 0 0.5em;
+	    }
+	}
+}
+
+#modal.show, #overlay.show {
+	opacity: 1;
+	visibility: visible;
+}
+#overlay {
+	img#background {
+		width:100%;
+	    height:100%;
+	    position:absolute;
+	    z-index:inherit;
+	    top:0;
+	    left:0;
+	}
+}
+
+.profiles-heading, .portfolio-heading {
+	margin-top:4em;
+}
+
+@media screen and (max-width:1024px) {
+	.profiles .grid-container .grid-item, .grid-entries .grid-container .grid-item {
+		height:400px;
+	}
+}
+
+
+
+
+

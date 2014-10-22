@@ -1,0 +1,119 @@
+@import "../_variables";
+
+#studiogood-logo
+{
+	position: absolute;
+	top: 28px;
+	left: 28px;
+	width: 30px;
+	height: 30px;
+	background-image: url('/img/smiley-face.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left center;
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.heading-row
+{
+	padding-bottom: 50px;
+	padding-top: 15px;
+}
+
+h1
+{	
+	font-size: 3em;
+}
+
+.overheard
+{
+	margin-bottom: 30px;
+}
+
+.overheard-content
+{
+	color: rgb(53, 53, 53);
+	font-family: $pathway;
+	font-size: 6em;
+	line-height: 1em;
+}
+
+.overheard-content:before
+{
+	content: '\201c';
+}
+
+.overheard-content:after
+{
+	content: '\201d';
+}
+
+.location
+{
+	margin-top: 30px !important;
+}
+
+.location-content
+{
+	font-family: $pathway;
+	font-size: 1.5em;
+}
+
+.location-content:before
+{
+	content: '\2014  '
+}
+
+.controls h6
+{
+	display: inline-block;
+}
+
+.line
+{
+	height: 2px;
+	background: $sg_blue;
+	width: 60%;
+	margin: 25px auto;
+}
+
+.blue
+{
+	color: $sg_blue;
+}
+
+.twitter-share-button
+{
+	position: relative;
+	top: 5px;
+}
+
+#social-shares
+{
+	margin-top: 30px;
+}
+
+#background
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 30%;
+	background-image: url('/img/smiley-face.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 -30%;
+	background-color: transparent;
+	opacity: .1;
+	z-index: -1;
+}
+
+section
+{
+	background: transparent;
+}

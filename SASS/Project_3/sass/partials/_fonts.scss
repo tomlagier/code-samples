@@ -1,0 +1,101 @@
+/** This partial is for defining fonts and font variables **/
+
+@font-face {
+    font-family:'Arial';
+    src: url('fonts/Arial-BoldItalicMT_latin+latin-ext_gdi.eot');
+    src: url('fonts/Arial-BoldItalicMT_latin+latin-ext_gdi.svg#Arial-BoldItalicMT') format('svg'),
+        url('fonts/Arial-BoldItalicMT_latin+latin-ext_gdi.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Arial-BoldItalicMT_latin+latin-ext_gdi.woff') format('woff'),
+        url('fonts/Arial-BoldItalicMT_latin+latin-ext_gdi.ttf') format('truetype'),
+        url('fonts/Arial-BoldItalicMT_latin+latin-ext_gdi.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-A78C;
+}
+
+@font-face {
+    font-family:'Arial';
+    src: url('fonts/Arial-BoldMT_latin+latin-ext_gdi.eot');
+    src: url('fonts/Arial-BoldMT_latin+latin-ext_gdi.svg#Arial-BoldMT') format('svg'),
+        url('fonts/Arial-BoldMT_latin+latin-ext_gdi.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Arial-BoldMT_latin+latin-ext_gdi.woff') format('woff'),
+        url('fonts/Arial-BoldMT_latin+latin-ext_gdi.ttf') format('truetype'),
+        url('fonts/Arial-BoldMT_latin+latin-ext_gdi.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-A78C;
+}
+
+@font-face {
+    font-family:'Arial';
+    src: url('fonts/Arial-ItalicMT_latin+latin-ext_gdi.eot');
+    src: url('fonts/Arial-ItalicMT_latin+latin-ext_gdi.svg#Arial-ItalicMT') format('svg'), 
+        url('fonts/Arial-ItalicMT_latin+latin-ext_gdi.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Arial-ItalicMT_latin+latin-ext_gdi.woff') format('woff'),
+        url('fonts/Arial-ItalicMT_latin+latin-ext_gdi.ttf') format('truetype'),
+        url('fonts/Arial-ItalicMT_latin+latin-ext_gdi.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-A78C;
+}
+
+
+@font-face {
+    font-family:'Arial';
+    src: url('fonts/ArialMT_latin+latin-ext_gdi.eot');
+    src:  url('fonts/ArialMT_latin+latin-ext_gdi.svg#ArialMT-Regular') format('svg'),
+        url('fonts/ArialMT_latin+latin-ext_gdi.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMT_latin+latin-ext_gdi.woff') format('woff'),
+        url('fonts/ArialMT_latin+latin-ext_gdi.ttf') format('truetype'),
+        url('fonts/ArialMT_latin+latin-ext_gdi.otf') format('opentype');
+       
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-A78C;
+}
+
+@font-face {
+    font-family:'Rockwell';
+    src: url('fonts/Rockwell_latin+latin-ext_gdi.eot');
+    src:  url('fonts/Rockwell_latin+latin-ext_gdi.svg#Rockwell-Regular') format('svg'),
+            url('fonts/Rockwell_latin+latin-ext_gdi.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Rockwell_latin+latin-ext_gdi.woff') format('woff'),
+        url('fonts/Rockwell_latin+latin-ext_gdi.ttf') format('truetype'),
+        url('fonts/Rockwell_latin+latin-ext_gdi.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2215;
+}
+
+/** Font variables **/
+
+$arial : 'Arial', arial, sans-serif;
+$rockwell : 'Rockwell', serif;
+
+/** Body font sizes **/
+$font-body--xs  : 9px;
+$font-body--sm  : 10px;
+$font-body--md  : 12px;
+$font-body--mdlg: 14px;
+$font-body--lg  : 18px;
+$font-body--xlg : 22px;
+
+/** Heading font sizes **/
+$font-head--xs  : 14px;
+$font-head--sm  : 18px;
+$font-head--md  : 22px;
+$font-head--mdlg: 28px;
+$font-head--lg  : 36px;
+$font-head--xlg : 48px;
+
+/** Smoothing class **/
+
+.font-smoothed{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

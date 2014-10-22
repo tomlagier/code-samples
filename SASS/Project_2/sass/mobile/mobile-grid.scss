@@ -1,0 +1,331 @@
+@import "../_variables";
+
+.clear {
+    width:1px;
+    height:0;
+    line-height:0;
+    background:transparent;
+    border:none;
+    margin:0;
+    padding:0;
+    clear:both;
+}
+body {
+    padding-top:1px;
+    top: -1px;
+}
+.profiles .grid-container .grid-item, .portfolio-entries .grid-container .grid-item {
+    height:350px;
+    perspective: 1000;
+    transition: all .7s;
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+    padding: 1em;
+    margin-bottom: 45px;
+}
+.grid-item {
+    cursor: pointer;
+    .hidden {
+        opacity: 0;
+    }
+    .front {
+        border:1px solid $grey_2;
+        color:$white_1;
+        display:block;
+        height:auto;
+        .inner {
+            background:$sg_blue;
+            width: 100%;
+            height: 100%;
+            img.profile-pic {
+                width:100%;
+                height:100%;
+                display:block;
+            }
+        }
+    }
+    .back {
+        border:1px solid $sg_blue;
+        h2 {
+            font-family:$pathway;
+            font-size:1.75em;
+            color:$grey_2;
+            margin:0.5em;
+            padding:0 0 .5em 0;
+            border-bottom: solid 1px $sg_blue;
+        }
+        h3 {
+            position: absolute;
+            width: 100%;
+            bottom: 1em;
+        }
+        h5 {
+            margin: 1em 0 .5em;
+        }
+        .inner {
+            background:$white;
+            width: 100%;
+            height: 100%;
+            p {
+                font-family:$cardo;
+                font-size:1em;
+                color:$grey_2;
+                text-align:center;
+                margin:0.5em;
+                padding:0;
+                strong {
+                    font-family:$pathway;
+                    width:100%;
+                    position:relative;
+                    display:block;
+                    border-bottom:1px solid $sg_blue;
+                    margin:0 0 0.5em;
+                }
+                a.crystal {
+                    background:transparent;
+                    color:transparent;
+                    text-decoration:none;
+                    border:none;
+                }
+            }
+            .click-me {
+                width:50%;
+                height:auto;
+                display:block;
+                background:transparent;
+                position:absolute;
+                z-index:20002;
+                left:25%;
+                bottom:5%;
+                text-align:center;
+                cursor:pointer;
+                p {
+                    font-family:$pathway;
+                    font-size:1.75em;
+                    line-height:1;
+                    font-weight:bold;
+                    color:$sg_blue;
+                    margin:0 0.5em 0.5em;
+                    span {
+                        font-family:$pathway;
+                        font-size:0.5em;
+                        font-weight:normal;
+                        text-transform:uppercase;
+                        color:$sg_blue;
+                        margin:0;
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+}
+.grid-item:first-child {
+    padding-top: 0 !important;
+}
+.grid-item:last-child {
+    padding-bottom: 0 !important;
+}
+.grid-item-inner {
+    width: 100%;
+    height: 100%;
+    padding: 1.4em;
+    .caption {
+        padding: 1em;
+        background: $black;
+        width: 100%;
+        color: $white;
+        height: 80px;
+        .name {
+            color: $white;
+            border-bottom: 1px solid $white;
+            padding-bottom: 3px;
+            margin-bottom: 3px;
+        }
+        .title {
+            font-size: 90%;
+        }
+    }
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    padding: 0;
+    background-size: cover;
+    height: 300px;
+}
+#modal {
+    background:transparent;
+    height: auto;
+    z-index: 10000;
+    visibility: hidden;
+    border:none;
+    opacity: 0;
+    .content {
+        position: absolute;
+        z-index: 999999;
+        top: 300px;
+        padding: 1em;
+        width: 100%;
+    }
+    h1 {
+        font-family:$pathway;
+        color:$black;
+        text-align:left;
+        font-size:4em;
+        line-height:1;
+        margin: 0 0 .1em 0;
+        padding: 0 0 .1em 0;
+        width:100%;
+        display:block;
+        border-bottom: 1px solid $sg_blue;
+    }
+    h4 {
+        color: $sg_blue;
+        margin: .1em 0;
+    }
+    .employee-title {
+        font-size: 1.5em;
+    }
+    .info-section {
+        margin: 0 0 .8em 0;
+    }
+    .info-section:last-child {
+        margin: 0;
+    }
+    .info-area {
+        margin: 2em 0;
+        background: $lt_grey;
+        padding: 1em;
+        opacity: inherit;
+    }
+    a {
+        color: $grey_2;
+    }
+    a:hover {
+        text-decoration: none;
+        color: $sg_blue;
+    }
+    .socials {
+        font-family:$cardo;
+        color:$grey_2;
+        font-size:1.2em;
+        strong {
+            font-family:$pathway;
+            color:$sg_blue;
+            font-size:2em;
+            line-height:1.5;
+        }
+        span {
+            font-family:$pathway;
+            color:$sg_blue;
+            font-weight:bold;
+            font-size:1.1em;
+        }
+        img.social {
+            border-radius:0.4em;
+            margin:0 0 0.5em;
+        }
+    }
+}
+
+
+span.blue {
+    color:$sg_blue;
+}
+#modal.show, #overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    background:$white;
+}
+a.close {
+    width: 30px;
+    height: 40px;
+    display: block;
+    position: fixed;
+    z-index: 10000000000;
+    top: 20px;
+    right: 20px;
+    background: $white_70;
+    text-decoration: none;
+    padding: 5px 3px 1px 3px;
+    border: 1px solid $blue_2;
+    img {
+        width:100%;
+        height:auto;
+        margin:0;
+        padding:0;
+    }
+}
+.profiles-heading, .portfolio-heading {
+    margin-top: 4em;
+}
+.fade-text {
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    h1 {
+        font-size: 5.5em;
+    }
+}
+.fade-text.fadeIn {
+    opacity: 1;
+}
+.fade-text.fadeOut {
+    opacity: 0;
+}
+.portfolio-entries {
+    position: relative;
+}
+
+
+#work-tiles
+{
+    padding: 0 0 40px 0;
+    margin-top: 20px;
+}
+
+.stat
+{
+    border: none !important;
+}
+
+#work-tiles .caption .subhead
+{
+    color: $white_70;
+}
+
+@media (min-width: 940px) {
+    .modal-pic
+    {
+        height: 450px;
+    }
+
+    #modal .content
+    {
+        top: 450px;
+    }
+}

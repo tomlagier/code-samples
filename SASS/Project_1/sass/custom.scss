@@ -1,0 +1,560 @@
+//StudioGood's master SCSS file. Loaded last, so holds greatest priority.
+
+@import 'partials/utilities';
+@import 'partials/colors';
+@import 'partials/variables';
+
+/** Wrapper styles **/
+
+.body{
+	position: relative;
+}
+
+.page-title{
+	line-height: 1em;
+	margin-bottom: 25px;
+}
+
+.page-content{
+	padding: 50px 0 25px 0;
+}
+
+/** Background patterns **/
+
+.textured{
+	background: url('#{$images-url}/patterns/ricepaper2.png') repeat;
+}
+
+/** Homepage Styles **/
+
+.meta-data{
+	margin-bottom: 0;
+}
+
+/** Search bar **/
+
+.header-search{
+
+	float: right;
+	padding: 21px 0 0 0; //Hand-aligned with bottom of logo
+
+	input {
+		outline: none;
+	}
+	input[type="search"] {
+		-webkit-appearance: textfield;
+		-webkit-box-sizing: content-box;
+		font-family: inherit;
+		font-size: 100%;
+	}
+	input::-webkit-search-decoration,
+	input::-webkit-search-cancel-button {
+		display: none; 
+	}
+
+
+	input[type="search"] {
+		border: 1px solid #ccc;
+		padding: 5px 10px 5px 30px;
+		width: 55px;
+		
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		transition: all .5s;
+	}
+
+	input[type="search"].focus {
+		width: 130px;
+		background-color: #fff;
+		border-color: $cfe-blue;
+		
+		-webkit-box-shadow: 0 0 5px $cfe-blue-50;
+		-moz-box-shadow: 0 0 5px $cfe-blue-50;
+		box-shadow: 0 0 5px $cfe-blue-50;
+	}
+
+
+	input:-moz-placeholder {
+		color: #999;
+	}
+	input::-webkit-input-placeholder {
+		color: #999;
+	}
+
+	button{
+		position: relative;
+		left: 33px;
+		background: none;
+		border: none;
+		color: $cfe-blue; 
+		font-size: 16px;
+	}
+
+	button:hover{
+		color: $cfe-blue-darker-1;
+	}
+	
+	button:active{
+		color: $cfe-blue-darker-2;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	.header-search{
+		float: none;
+		padding: 10px 0 20px;
+
+		fieldset{
+			position: relative;
+		}
+
+		.search-submit{
+			position: absolute;
+			left: 5px;
+			top: 2px;
+		}
+
+		#search{
+			width: 100%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+	}
+}
+
+/** Featured blocks **/
+
+.featured-block-image{
+	position: relative;
+	display: block;
+
+	img{
+		width: 100%;
+	}
+
+	.title{
+		font-family: 'Architects Daughter', sans-serif;
+	}
+}
+
+.featured-blocks-row .listing-cont{
+	padding-top: 25px;
+}
+
+.featured-block-image .title,
+.featured-block-image .more{
+	left: -10px;
+	border-radius: 3px;
+}
+
+.featured-block-image .title{
+	min-width: 120px;
+}
+
+/** Menu styles **/
+
+.site-header .topbar{
+	height: 110px;
+}
+
+.is-sticky .main-menu-wrapper{
+	//background: url('#{$images_url}/patterns/ricepaper2.png') repeat;
+	background: $cfe_teal;
+}
+
+.site-header h1.logo{
+	line-height: 1.2em;
+}
+
+.logo{
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.logo .tagline{
+	font-size: 16px;
+	line-height: 1.3em;
+	font-style: italic;
+}
+
+@media screen and (max-width: 767px){
+
+	.logo{
+		line-height: .9em !important;
+	}
+
+	.logo .site-title{
+		font-size: 28px;
+	}
+}
+
+.megamenu-column{
+	padding-bottom: 20px;
+	border: none;
+}
+
+.megamenu-column ul,
+.megamenu-column li{
+	border: none !important;
+	font-family: 'Cabin', sans-serif;
+}
+
+.megamenu-column h4{
+	text-align: left;
+	font-family: 'Architects Daughter', sans-serif;
+}
+
+.navigation{
+	top: 1px;
+}
+
+.top-navigation{
+	padding: 20px 0 0 0;
+}
+
+.secondary-navigation{
+	clear: both;
+}
+
+@media screen and (min-width: 768px){
+	.navigation{
+		background: $cfe-teal;
+	}
+
+	.navigation > ul > li > a{
+		color: white;
+	}
+}
+
+/** Mobile menu **/
+
+.site-header .menu-toggle{
+	float: none;
+	position: absolute;
+	top: 20px;
+	margin: 0;
+	right: 20px;
+	font-size: 30px;
+}
+
+@media screen and (max-width: 767px){
+	.site-header .menu-toggle{
+		z-index: 10000;
+	}
+
+	.site-header .topbar{
+		height: auto;
+	}
+}
+
+/** Timeline custom styles **/
+
+#timeline-wrapper{
+	padding-top: 50px !important;
+}
+
+#storyjs-timeline{
+	z-index: 1 !important;
+}
+
+.vco-timeline .vco-navigation .timenav-background{
+	background: $cfe-grey2;
+}
+
+@media screen and (max-width: 767px){
+	#timeline-wrapper{
+		margin: 0 auto !important;
+	}
+}
+
+/** Homepage widgets **/
+
+.homepage-widget:last-child .listing-cont{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+@media screen and (max-width: 767px){
+	#homepage-main{
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.featured-blocks-row .listing-cont{
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.featured-block:last-child{
+		margin-bottom: 0;
+	}
+}
+
+/** Upcoming event widget **/
+
+.notice-bar{
+	box-shadow: $separator-shadow;
+}
+
+@media screen and (max-width: 767px){
+	.notice-bar-title{
+		text-align: center;
+	}
+
+	.notice-bar-title .title-note{
+		font-size: 18px;
+		padding: 4px;
+	}
+
+	.notice-bar-title strong{
+		display: inline-block;
+	}
+
+	.notice-bar-event-title{
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.counter{
+		text-align: center;
+	}
+
+	.counter .timer-col{
+		width: auto;
+	}
+}
+
+/** Recent discussions widget **/
+
+.recent-topic{
+	padding: 10px 0;
+	border-bottom: 1px solid #eceae4;
+}
+
+.bbp-forum-title{
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	padding-bottom: 5px;
+	line-height: 1.1em;
+}
+
+.recent-topic .topic-author{
+	font-size: 12px;
+	line-height: 1em;
+}
+
+.recent-topic .topic-author a{
+	text-decoration: none;
+}
+
+.recent-topic .topic-author a img{
+	vertical-align: top;
+	position: relative;
+	top: 3px;
+}
+
+.recent-topic .topic-freshness{
+	display: block;
+	font-style: italic;
+	font-size: 11px;
+}
+
+/** Footer **/
+
+.site-footer{
+	margin-top: 25px;
+}
+
+.site-footer-bottom{
+	box-shadow: $separator-shadow;
+	background: $cfe-teal;
+	color: white;
+}
+
+.footer-widget{
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px){
+	.footer-widget{
+		margin-bottom: 50px;
+	}
+}
+
+/** Footer quotes widget **/
+
+.footer-widget{
+
+	.quote-text{
+		font-family: 'Cabin', serif;
+		font-weight: 300;
+		font-style: italic;
+		font-size: 14px;
+		line-height: 1.6em;
+		border-left: 0;
+		padding: 0;
+	}
+
+	.quote-author{
+		font-weight: bold;
+		float: right;
+	}
+
+	.quote-author:before{
+		content:"\2014";
+		padding-right: 3px;
+	}
+
+}
+
+/** FORUMS **/
+
+/** General forum styles **/
+
+//Remove forum search form
+.bbp-search-form{
+	display: none;
+}
+
+.container #bbpress-forums{
+	margin: 0;
+}
+
+.container .bbpress-forums{
+	margin-bottom: 0;
+}
+
+#subscription-toggle{
+	float: right;
+}
+
+.container{
+
+	#bbpress-forums p.bbp-topic-meta img.avatar, 
+	#bbpress-forums ul.bbp-reply-revision-log img.avatar, 
+	#bbpress-forums ul.bbp-topic-revision-log img.avatar, 
+	#bbpress-forums div.bbp-template-notice img.avatar, 
+	#bbpress-forums .widget_display_topics img.avatar, 
+	#bbpress-forums .widget_display_replies img.avatar{
+		margin-bottom: 0;
+	}
+
+}
+
+#bbp-user-body [for="dbem_phone"] .description{
+	display: none;
+}
+
+.bbp-forum-title{
+	font-family: 'Architects Daughter', sans-serif;
+}
+
+/** Breadcrumbs **/
+
+.breadcrumbs-row{
+	padding-top: 75px;
+	padding-bottom: 25px;
+
+	background: $cfe-blue;
+}
+
+@media screen and (max-width: 767px){
+	.breadcrumbs-row{
+		padding-top: 25px;
+	}
+}
+
+.breadcrumbs,
+.breadcrumbs a{
+	color: $cfe-tan2;
+	text-decoration: none;
+}
+
+.breadcrumbs a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+.breadcrumbs > span > span{
+	padding: 0 5px;
+}
+
+.breadcrumbs > span > span:first-child{
+	padding-left: 0;
+}
+
+.breadcrumbs > span > span:last-child{
+	padding-right: 0;
+}
+
+.breadcrumb_last{
+	color: white;
+}
+
+/** Events Listing page **/
+
+.events-list-wrapper{
+	position: relative;
+	min-height: 110px;
+}
+
+.events-list-loader{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100px;
+
+	-webkit-transition: opacity 0.3s ease-out;
+	-moz-transition: opacity 0.3s ease-out;
+	transition: opacity 0.3s ease-out;
+
+	opacity: 0;
+	background: white url('#{$images-url}/loader.gif') no-repeat;
+	background-position: center;
+	pointer-events: none;
+	min-height: 100px;
+}
+
+.events-list-loader.visible{
+	opacity: 1;
+}
+
+.events-list-controls{
+	text-align: right;
+	position: relative;
+	top: 8px;
+}
+
+.events-list-month{
+	margin-bottom: 0;
+}
+
+.events-list-month,
+.events-list-prev,
+.events-list-next{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.events-list-prev,
+.events-list-next{
+	background: $cfe_teal;
+	cursor: pointer;
+	color: white;
+	font-size: 18px;
+	padding: 0 6px;
+}
+
+.events-list-prev:hover,
+.events-list-next:hover{
+	background: $cfe_blue;
+}

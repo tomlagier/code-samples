@@ -1,0 +1,223 @@
+@import "../_variables";
+
+/* HOME TITLE */
+
+.home-title .text-white {
+	font-size:2rem;
+}
+
+/* HOME SERVICES SECTION  */
+
+.service-text h1 {
+	font-size:1.75em;
+}
+
+#services-slider-controls {
+	max-width:62.5em;
+	width:100%;
+	margin:0 auto 3.5em;
+	text-align:center;
+	.control {
+		border-color:$sg_blue;
+		display:inline-table;
+		width:200px;
+		height:60px;
+		vertical-align:middle;
+	}
+	.active .btn {
+		color:$white;
+		background:$sg_blue;
+	}
+}
+
+#services {
+	.page-title {
+		margin-bottom:88px;
+	}
+}
+
+
+.slide {
+	height:100%;
+	width:33.33%; /* probably need to change this if you have more or less slides than 3. */
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	background-size:135% auto;
+	position:relative;
+	right:-1px;
+	.service-image {
+		background-size:cover;
+		height:100%;
+		overflow:hidden;
+	}
+	#service-image-1 {
+		background:$service_image_1;
+	}
+	#service-image-2 {
+		background:$service_image_2;
+	}
+	#service-image-3 {
+		background:$service_image_3;
+	}
+	.home-service-text {
+		padding-left:2em;
+		height:100%;
+		h2 {
+			font-family:$pathway;
+			font-weight:normal;
+			font-style:normal;
+			font-size:2.3125rem;
+			text-transform:uppercase;
+			text-rendering:optimizeLegibility;
+			color:$dk_grey;
+			margin:1em 0;
+			padding:0;
+		}
+		p {
+			font-family:$cardo;
+			font-weight:normal;
+			font-style:normal;
+			font-size:1rem;
+			text-rendering:optimizeLegibility;
+			color:$grey_8;
+			margin:0 0 1.25rem;
+		}
+		ul {
+			font-family:$cardo;
+			font-size:1rem;
+			margin:0 0 1.25rem;
+			list-style-position:outside;
+			li {
+				font-family:inherit;
+				margin:0;
+				padding:0;
+				color:$dk_grey;
+			}
+		}
+	}
+	#service-text-1 {
+		background:$service-text-1;
+	}
+	#service-text-2 {
+		background:$service-text-2;
+	}
+	#service-text-3 {
+		background:$service-text-3;
+	}
+}
+
+/* HOME CASE STUDIES SECTION */
+
+#case-studies {
+	position:relative;
+	background:$white;
+	#case-studies-slider {
+		margin:0;
+		padding:0;
+		ul.slides {
+			margin:0;
+			padding:0;
+			list-style:none;
+			li {
+				background-position-x:0px !important;
+				background-size:cover !important;
+			}
+		}
+	}
+}
+
+.content-box {
+	background:$black_50;
+	color:$white;
+	position:absolute;
+	padding:1.5em !important;
+	max-width:300px;
+	top:auto;
+	h2 {
+		font-family:$pathway;
+		font-weight:bold;
+		font-style:normal;
+		text-transform:uppercase;
+		text-rendering:optimizeLegibility;
+		color:$white;
+		margin-bottom:0.5em;
+	}
+	p {
+		margin:0 0 1.25rem;
+		padding:1em 0;
+		border-top:1px solid $white;
+		border-bottom:1px solid $white;
+	}
+	a.btn {
+		margin-top:22px;
+		h6 {
+			color:$white;
+		}
+	}
+}
+
+.content-box.top {
+	top:125px;
+}
+
+.content-box.left {
+	left:125px;
+}
+
+.content-box.right {
+	right:175px;
+}
+.content-box.bottom {
+	bottom:125px;
+}
+
+/* HOME PHILOSOPHY SECTION */
+
+#pizza-image {
+	.text-white {
+		font-size:20px;
+		line-height:1;
+		height:auto;
+	}
+	background:$grey_1;
+	.icon {
+		background:$grey_1;
+	}
+	h1 {
+		color:$white;
+	}
+	.line {
+		background:$white;
+		.icon {
+			background:$grey_1;
+		}
+	}
+	.subline {
+		color:$white;
+	}
+	.pizza-image {
+		padding-bottom:2em;
+	}
+}
+
+/* HOME STATS SECTION */
+
+#stats {
+	background:$white_2;
+	.stat {
+		border-right:1px solid $grey;
+		.icon {
+			color:$sg_blue;
+			font-size:42px;
+		}
+		span {
+			color:$grey_1;
+			font-style:italic;
+			font-size:18px;
+		}
+	}
+	.stat:last-child {
+		border-right:none;
+	}
+}

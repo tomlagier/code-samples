@@ -1,0 +1,17 @@
+/** This partial is for defining colors and color variables **/
+
+$black 	   	 : rgba( 35, 31, 32, 1 );
+$black--dark : rgba( 0, 0, 0, 1 );
+$white	     : rgba( 255, 255, 255, 1 );
+$yellow      : rgba( 253, 186, 49, 1 );
+$red 	     : rgba( 192, 57, 43, 1 );
+$lightgrey 	 : rgba( 135, 135, 135, 1 );
+$midgrey	 : rgba( 97, 97, 97, 1 );
+$darkgrey	 : rgba( 65, 65, 65, 1 );
+$darkwhite   : rgba( 255, 255, 255, .8 );
+
+/** Transparency **/
+$xlightgrey--trans  : rgba( 0, 0, 0, .05 );
+$lightgrey--trans   : rgba( 0, 0, 0, .15 );
+$black-trans : rgba( 0, 0, 0, .5 );
+$black-trans--dark : rgba( 0, 0, 0, .8 );

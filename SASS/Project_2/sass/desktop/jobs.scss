@@ -1,0 +1,160 @@
+@import "../_variables";
+
+/* JOBS PAGE */
+
+#jobs-heading .page-title {
+	h1 {
+	color:$white;
+	}
+}
+
+.page-title {
+	h1 {
+	background:transparent;
+	}
+}
+
+.job_tile {
+	.service {
+		height:400px;
+		.btn {
+		position:relative;
+		left:50%;
+		}
+	}
+	p {
+		font-size:0.9rem;
+		margin-bottom:0;
+	}
+}
+
+.buttons
+{
+	margin-top: 40px;
+}
+
+a.job_application {
+	right:10%;
+	color:$sg_blue;
+	display: inline-block;
+}
+
+.service-icon {
+	width:100%;
+	font-size:40px;
+	color:$grey;
+}
+.service-text {
+	width:100%;
+	h5 {
+		margin-bottom:11px;
+		letter-spacing:2px;
+	}
+	p {
+		margin-bottom:0;
+	}
+}
+.service {
+	text-align:center;
+	margin-bottom:30px;
+	padding:22px;
+	border: 1px solid $grey_7;
+	overflow:hidden;
+	.line {
+		width:100%;
+		background:$grey_7;
+		height:1px;
+		margin:22px 0;
+	}
+}
+
+/** Job application CSS **/
+
+#overlays
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: $black_72;
+	transition: opacity .3 ease-in;
+	-webkit-transition: opacity .3 ease-in;
+	-moz-transition: opacity .3 ease-in;
+	-o-transition: opacity .3 ease-in;
+	display: none;
+	top: 0;
+	left: 0;
+	z-index: 999;
+
+	#application
+	{
+		position: relative;
+		top: 150px;
+		border-radius: 10px;
+		padding: 40px;
+		background: white;
+		h1
+		{
+			font-size: 5em;
+			margin-bottom: 10px;
+		}
+
+		a.close {
+			width:3%;
+		    height:auto;
+		    display:block;
+		    position:absolute;
+		    top:20px;
+		    right:20px;
+		    background:transparent;
+		    color:transparent;
+		    text-decoration:none;
+		    border:none;
+		    img {
+		    	width:100%;
+		    	height:auto;
+		    	margin:0;
+		    	padding:0;
+		    }
+		}
+
+		.application-text
+		{
+			margin: 30px 0;
+		}
+
+		.application-label
+		{
+			margin-bottom: 10px;
+		}
+
+		#application-submit
+		{
+			display: inline-block;
+			font-size: 1em;
+		}
+
+		#application-submit:hover
+		{
+			-webkit-text-fill-color: white;
+		}
+	
+		#success-message
+		{
+			color: green;
+			transition: opacity .3s ease-in;
+			-webkit-transition: opacity .3s ease-in;
+			-moz-transition: opacity .3s ease-in;
+			-o-transition: opacity .3s ease-in;
+			margin: 10px;
+			opacity: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px)
+{
+	#application
+	{
+		max-width: 90%;
+	}
+}

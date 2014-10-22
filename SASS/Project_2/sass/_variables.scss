@@ -1,0 +1,102 @@
+/* Color Variables */
+
+$sg_blue : #0d5cbf;
+$grey : #ccc;
+$grey_1 : #777;
+$grey_2 : #6e6e6e;
+$grey_3 : #888;
+$grey_4 : #444;
+$grey_5 : #222;
+$grey_6 : #bbb;
+$grey_7 : #adadad;
+$grey_8 : #555;
+$grey_9 : #ddd;
+$lt_grey : #eee;
+$dk_grey : #353535;
+$white : #fff;
+$white_1 : #fdfdfd;
+$white_2 : #f7f7f7;
+$white_3 : #fefefe;
+$white_70 : rgba(255,255,255,0.7);
+$white_80 : rgba(255,255,255,0.8);
+$white_90 : rgba(255,255,255,0.9);
+$black : #000;
+$black_30 : rgba(0,0,0,0.3);
+$black_50 : rgba(0,0,0,0.5);
+$black_72 : rgba(0,0,0,0.72);
+$black_80 : rgba(0,0,0,0.8);
+$black_90 : rgba(0,0,0,0.9);
+$lt_blue : #59c5dc;
+$blue_2 : #2ba6cb;
+$blue_80 : rgba(13,92,191,0.8);
+$brown : #B6A591;
+$red : #ff1717;
+
+
+/* @font-face definitions */
+
+@font-face {
+	font-family: 'ElegantIcons';
+	src:url('../fonts/ElegantIcons.eot');
+	src:url('../fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ElegantIcons.woff') format('woff'),
+		url('../fonts/ElegantIcons.ttf') format('truetype'),
+		url('../fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: "outlined-iconset";
+  src:url("../fonts/outlined-iconset.eot");
+  src:url("../fonts/outlined-iconset.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/outlined-iconset.woff") format("woff"),
+    url("../fonts/outlined-iconset.ttf") format("truetype"),
+    url("../fonts/outlined-iconset.svg#outlined-iconset") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Font Variables */
+
+$pathway : 'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$cardo : 'Cardo',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$montserrat : 'Montserrat', sans-serif;
+$roboto : 'Roboto Slab';
+$helvetica : "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+
+/* Miscellaneous Variables */
+
+$service_image_1 : transparent url('/img/awesome-service-image.png?v=1.123') no-repeat 0 0;
+$service_image_2 : transparent url('/img/awesome-service-image.png?v=1.123') no-repeat 0 0;
+$service_image_3 : transparent url('/img/awesome-service-image.png?v=1.123') no-repeat 0 0;
+$service-text-1 : transparent url('/img/chicken-icon.png?v=1.123') bottom right no-repeat;
+$service-text-2 : transparent url('/img/chicken-icon.png?v=1.123') bottom right no-repeat;
+$service-text-3 : transparent url('/img/chicken-icon.png?v=1.123') bottom right no-repeat;
+$slo-selector : transparent url('/img/background-slo.jpg?v=1.123') no-repeat center;
+$dallas-selector : transparent url('/img/background-dal.jpg?v=1.123') no-repeat center;
+$nyc-selector : transparent url('/img/background-nyc.jpg?v=1.123') no-repeat center;
+
+/* Social Icons */
+
+$facebook : url('/img/social_icons/facebook.png?v=1.123');
+$twitter : url('/img/social_icons/twitter.png?v=1.123');
+$linkedin : url('/img/social_icons/linkedin.png?v=1.123');
+$yelp : url('/img/social_icons/yelp.png?v=1.123');
+$foursquare : url('/img/social_icons/foursquare.png?v=1.123');
+$instagram : url('/img/social_icons/instagram.png?v=1.123');
+$pinterest : url('/img/social_icons/pinterest.png?v=1.123');
+$digg : url('/img/social_icons/digg.png?v=1.123');
+$reddit : url('/img/social_icons/reddit.png?v=1.123');
+$googleplus : url('/img/social_icons/googleplus.png?v=1.123');
+$youtube : url('/img/social_icons/youtube.png?v=1.123');
+$flickr : url('/img/social_icons/flickr.png?v=1.123');
+$tumblr : url('/img/social_icons/tumblr.png?v=1.123');
+$blogger : url('/img/social_icons/blogger.png?v=1.123');
+$stumbleupon : url('/img/social_icons/stumbleupon.png?v=1.123');
+$spotify : url('/img/social_icons/spotify.png?v=1.123');
+
+
+

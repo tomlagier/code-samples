@@ -1,0 +1,104 @@
+@import "../_variables";
+
+.social-link
+{
+	width: 35px;
+	height: 35px;
+	background-size: contain;
+	margin: 3px; 
+	display: inline-block;
+	a {
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.social-icons
+{
+	height: 40px;
+	margin: .65em 0;
+}
+
+#modal .info-area
+{
+	margin: 1em 0;
+}
+
+.type-Twitter
+{
+	background-image: $twitter;
+}
+
+.type-Facebook
+{
+	background-image: $facebook;
+}
+
+.type-LinkedIn
+{
+	background-image: $linkedin;
+}
+
+.type-Yelp
+{
+	background-image: $yelp;
+}
+
+.type-FourSquare
+{
+	background-image: $foursquare;
+}
+
+.type-Instagram
+{
+	background-image: $instagram;
+}
+
+.type-Pinterest
+{
+	background-image: $pinterest;
+}
+
+.type-Digg
+{
+	background-image: $digg;
+}
+
+.type-Reddit
+{
+	background-image: $reddit;
+}
+
+.type-GooglePlus
+{
+	background-image: $googleplus;
+}
+
+.type-YouTube
+{
+	background-image: $youtube;
+}
+
+.type-Flickr
+{
+	background-image: $flickr;
+}
+
+.type-Tumblr
+{
+	background-image: $tumblr;
+}
+
+.type-Bloggr
+{
+	background-image: $blogger;
+}
+
+.type-StumbledUpon
+{
+	background-image: $stumbleupon;
+}
+.type-Spotify {
+	background-image: $spotify;
+}

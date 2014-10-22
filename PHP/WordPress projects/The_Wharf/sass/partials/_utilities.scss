@@ -1,0 +1,77 @@
+/** Includes general utility classes **/
+
+/** Transitions **/
+
+.u-fadeout{
+    opacity: 1;
+    @include transition( opacity 0.5s ease-out );
+}
+
+.u-fadeout.faded{
+	opacity: 0;
+}
+
+.u-fadeout.lower{
+	z-index: -1; 
+}
+
+/** Alignment **/
+
+.u-center{
+	text-align: center;
+}
+
+.u-center-vertical{
+	vertical-align: middle;
+}
+
+/** Spacing **/
+
+.u-padded-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/** Box shadows **/
+
+.u-shadow-light{
+	box-shadow: 0 0 2px 1px rgba(0,0,0,.2);
+}
+
+/** Table display **/
+
+.u-table{
+	display: table;
+}
+
+@media screen and (max-width: 767px){
+	.sm-full{
+		width: 100%;
+	}
+}
+
+.u-table-cell{
+	display: table-cell;
+}
+
+/** Visibility hammer **/
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.visible-sm{
+		display: block !important;
+	}
+}
+
+/** JavaScript utilities **/
+
+.js-center-vertical{
+	position: relative;
+	max-width: 100%;
+	display: inline-block;
+}
+
+/** Full-width hero images **/
+
+.js-hero-image{
+	background-size: cover;
+}

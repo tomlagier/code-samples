@@ -1,0 +1,48 @@
+.form
+{
+    width: 400px;
+    margin: 2em auto;
+    border-radius: 20px;
+    border: 3px solid #0d5cbf;
+    border-width: 2px;
+    padding: 1em;
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.form-field
+{
+    margin-top: .75em;
+}
+
+.submit
+{
+    margin-top: 1em;
+}
+
+h4
+{
+    margin: .5em;
+}
+
+.btn
+{
+    font-size: 1.2em;
+    background: #ddd;
+}
+
+.messages
+{
+    color: red;
+    text-align: center;
+    padding: 1em;
+}
+
+.message
+{
+    margin: .5em;
+}
+
+.submit .btn
+{
+    margin: 0 auto;
+}

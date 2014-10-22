@@ -1,0 +1,173 @@
+/** Slider 1 Styles **/
+.slide
+{
+	height: 100%;
+    width: 33.33%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 135% auto;
+    position: relative;
+    right: -1px;
+}
+
+.slide-wrapper
+{
+	width: 301%;
+    height: 100%;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1)
+}
+
+.slider-controls
+{
+	margin-bottom: 3.5em;
+	text-align:center;
+}
+
+.control
+{
+	text-align: center;
+	border-color: #0d5cbf;
+	display: inline-table;
+	width: 200px;
+	height: 60px;
+	vertical-align: middle;
+}
+
+.control .btn
+{
+	height: inherit;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.control:nth-child(2)
+{
+	margin: 0 1em;
+}
+
+.control.active .btn, .control:hover .btn, .control.active .btn h6, .control:hover .btn h6
+{
+	color: white;
+	background: #0d5cbf;
+}
+
+.slide-wrapper[target="slide-1"]
+{
+	margin-left: 0;
+}
+
+.slide-wrapper[target="slide-2"]
+{
+	margin-left: -100%;
+}
+
+.slide-wrapper[target="slide-3"]
+{
+	margin-left: -200%;
+}
+
+.slider-slides
+{
+	overflow: hidden;
+	height: 400px;
+}
+
+/** Slider 2  Styles **/
+
+.content-box.bottom
+{
+	bottom: 125px;
+}
+
+.content-box.top
+{
+	top: 125px;
+}
+
+.content-box.left
+{
+	left: 125px;
+}
+
+.content-box.right
+{
+	right: 175px;
+}
+
+.content-box
+{
+	background: rgba(0,0,0,.5);
+	color: white;
+	position: absolute;
+	padding: 1.5em !important;
+	max-width: 300px;
+	top: auto;
+}
+
+.content-box h2
+{
+	color: white;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+.content-box p
+{
+	padding: 1em 0;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.slider-centered
+{
+	position: relative;
+}
+
+.flex-direction {
+	.flex-prev {
+		left:50px;
+	}
+	.flex-next {
+		right:50px;
+	}
+}
+
+.flex-direction-nav {
+	a {
+		opacity:1;
+		color:white;
+		height:60px;
+	}
+}
+
+.flex-direction-nav a:before
+{
+	position: relative;
+	top: 10px;
+}
+
+.flex-direction-nav
+{
+	a
+	{
+		font-size: 0;
+		top: 52%;
+	}
+
+	.flex-prev
+	{
+		left: 50px;
+	}
+
+	.flex-next
+	{
+		right: 50px;
+	}
+}
