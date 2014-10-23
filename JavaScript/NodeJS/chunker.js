@@ -1,3 +1,19 @@
+/**
+ * This is a part of the same NodeJS Twitter cashtag volume tracking/sentiment analysis app.
+ * This code is unfortunately uncommented, but exposes an object that can be used to "chunk"
+ * strings, with the object of exposing keywords and their surrounding text in order to 
+ * have a simple and reasonable unit to perform sentiment analysis on.
+ *
+ * (There are some pretty major flaws with this method of doing sentiment analysis,
+ * but my guess is you're more interested in my JavaScript chops than my machine
+ * learning skillset)
+ * 
+ * If I was going to re-write this file, I'd definitely add some comments :)
+ *
+ * Written by Tom Lagier, with an extension to indexOf that incorporates regex's (to
+ * allow for case insensitivity) from StackOverflow.
+ */
+
 module.exports = function(){
 
 		var eventEmitter = require('events').EventEmitter;

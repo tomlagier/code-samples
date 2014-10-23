@@ -1,3 +1,11 @@
+/** 
+ * This is a sample JS object from a recent front-end theme I created. 
+ * It showcases my approach to front-end glue code, especially in a quick turn environment
+ * where a SPA/JS framework isn't necessary
+ *
+ * Written by Tom Lagier
+ */
+
 jQuery( function( $ ){
 
 	//User agent detection - not greeeaaat.

@@ -1,3 +1,13 @@
+/**
+ * This file pulls in social feeds for Facebook, Twitter, and Instagram.
+ * It gets its response from a set of simple server-side endpoints to enable
+ * OAuth/app authentication where necessary. Basically it just digests
+ * social feed JSON. I'd consider events-list.js a slightly simpler and more
+ * sophisticated version of this.
+ *
+ * Written by Tom Lagier
+ */
+
 //This file is used to enable the social sidebar
 
 //Sizes the offset block at the top of the sidebar to keep all content below the header
@@ -244,18 +254,6 @@ function getInstagram()
 	);
 }
 
-//Fire our ajax requests on doc ready
-$(document).ready(function(){
-	
-	getFacebook();
-	getTwitter();
-	getInstagram();
-
-	setupSidebarEvents();
-	setupSidebarClose();
-
-});
-
 //On our tabs, but not the overheard tab (that's just a link), slide them open when clicked
 function setupSidebarEvents()
 {
@@ -296,3 +294,15 @@ function setupSidebarClose()
 	    }
 	});
 }
+
+//Fire our ajax requests on doc ready
+$(document).ready(function(){
+	
+	getFacebook();
+	getTwitter();
+	getInstagram();
+
+	setupSidebarEvents();
+	setupSidebarClose();
+
+});

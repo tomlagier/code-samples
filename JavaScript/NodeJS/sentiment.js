@@ -1,3 +1,14 @@
+/**
+ * This is another file from the Twitter project that attempts to use the 'natural' library, along with
+ * an extremely simple dictionary (the AFINN classification library) to perform basic sentiment analysis
+ * on tweets.
+ *
+ * Unfortunately, it's not commented, has baked-in test data, and doesn't work very well. However, it does a good job of
+ * showing my event-driven asynchronous code style!
+ *
+ * Written by Tom Lagier
+ */
+
 var natural = require('natural'),
 	eventEmitter = require('events').EventEmitter;
 

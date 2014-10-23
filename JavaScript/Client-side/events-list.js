@@ -1,4 +1,10 @@
-//Sets up AJAX for events switching
+/**
+ * This file shows my approach to setting up some simple AJAX. 
+ * It enables a calendar that pulls events from a WordPress plugin.
+ * It also uses some ultra-simple JS templating using a neat little trick involving script tags.
+ *
+ * Written by Tom Lagier
+ */
 
 $ = jQuery;
 

@@ -1,4 +1,12 @@
-//The code below is NOT written by me. It comes from https://github.com/thedillonb/twitter-cashtag-heatmap. My code begins at line 179.
+/**
+ * This is part of a simple NodeJS application that consumes Twitter's streaming API to analyze
+ * cashtag ($TICKER) frequency. The actual web server and Twitter API work was NOT written by me,
+ * it comes from https://github.com/thedillonb/twitter-cashtag-heatmap. My work was extending
+ * the application to analyze stock volumes alongside cashtag frequency, and perform
+ * ultra-simple sentiment analysis on the tweets.
+ *
+ * My code in this file begins on line 182.
+ */
 
 /**
  * Module dependencies.
