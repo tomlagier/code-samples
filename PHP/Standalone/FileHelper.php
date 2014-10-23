@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * This file does some basic moving/renaming of already-validated files. Validation is done in a separate class, so files are
+ * assumed to be of the MIME type they appear to be.
+ *
+ * Written by Tom Lagier
+ */
+
 class FileHelper {
 	public static function prepFiles(&$data)
 	{

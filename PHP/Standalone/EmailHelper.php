@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * This file works with Amazon Simple Email Service to send formatted contact form submissions with a bunch of optional fields
+ * and attaches any uploaded files to the message.
+ *
+ * Since this was a part of a Laravel project, I probably could have used a Blade template instead of the mess of 
+ * markup inside of buildContent. On the other hand, that would restrict me to HTML emails only, so I could go
+ * either way on that one.
+ *
+ * Written by Tom Lagier
+ */
+
 require_once('mime.php');
 
 class EmailHelper{

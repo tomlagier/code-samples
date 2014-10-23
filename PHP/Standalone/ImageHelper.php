@@ -1,7 +1,14 @@
 <?php
 
 /**
- * Helper functions for formatting dates and times
+ * This file was a part of a project that would construct a custom Google Map out of a set of uploaded images in a
+ * progression of resolutions. It worked with ImageMagick (Imagick class in PHP) to slice each image into a set of
+ * 256x256 tiles, and would pad out the image with grey so each tile would always be filled. 
+ * 
+ * Once the image was sliced, it would dump everything in a single directory, to be assembled on the front end.
+ * I've got that code to show, but it's pretty seriously incomplete. This stuff is much nicer.
+ *
+ * Written by Tom Lagier
  */
 
 class ImageHelper {
